@@ -4,6 +4,7 @@ public class FilDerSkalFjernesTestKHO {
 	
 	/*
 	 * DICK
+	 * asdsada
 	 */
 
 }
