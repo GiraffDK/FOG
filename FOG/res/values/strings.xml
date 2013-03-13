@@ -4,5 +4,12 @@
     <string name="app_name">FOG</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <!-- Frontpage -->
+    <string name="btn_privateparty">Private Parties</string>
+    <string name="btn_publicevent">Public Event</string>
+    <string name="btn_news">News</string>
+    <string name="btn_profil_settings">Profil/Settings</string>
+    <string name="tw_registered_events">Registered events:</string>
 
 </resources>
