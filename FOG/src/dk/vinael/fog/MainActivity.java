@@ -39,6 +39,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		lv.setAdapter(myarrayAdapter);
 		lv.setTextFilterEnabled(true);
 		findViewById(R.id.btn_private_party).setOnClickListener(this);
+		findViewById(R.id.btn_profil_settings).setOnClickListener(this);
 	}
 
 	@Override
@@ -65,7 +66,11 @@ public class MainActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		setContentView(R.layout.activity_framelayout);
-		MainActivity.changeFragment(partyFragment.class, getFragmentManager());
+		if (v.getId() == R.id.btn_private_party) {
+			MainActivity.changeFragment(partyFragment.class, getFragmentManager());
+		} else if (v.getId() == R.id.btn_profil_settings) {
+			MainActivity.changeFragment(settingsFragment.class, getFragmentManager());
+		}
 	}
 
 }
