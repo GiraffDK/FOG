@@ -11,5 +11,12 @@
     <string name="btn_news">News</string>
     <string name="btn_profil_settings">Profil/Settings</string>
     <string name="tw_registered_events">Registered events:</string>
-
+    
+    <!-- Partyfront -->
+    <string name="tw_parties">Parties:</string>
+    <string name="tw_past_parties">Past Parties:</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_history">History</string>
+    
 </resources>
