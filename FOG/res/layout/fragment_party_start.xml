@@ -20,7 +20,9 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/tv_parties"
         android:drawableLeft="@drawable/ic_search"
-        android:text="@string/btn_search" />
+        android:text="@string/btn_search"
+        android:onClick="onClick"
+         />
 
     <Button
         android:id="@+id/btn_add"
@@ -29,7 +31,9 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btn_search"
         android:drawableLeft="@drawable/ic_add"
-        android:text="@string/btn_add" />
+        android:text="@string/btn_add"
+        android:onClick="onClick"
+         />
 
     <Button
         android:id="@+id/btn_history"
@@ -38,7 +42,9 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btn_add"
         android:drawableLeft="@drawable/ic_history"
-        android:text="@string/btn_history" />
+        android:text="@string/btn_history"
+        android:onClick="onClick"
+         />
 
     <ListView
         android:id="@+id/list"

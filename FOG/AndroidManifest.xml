@@ -13,15 +13,79 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="dk.vinael.fog.startActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="dk.vinael.fog.menuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.menuFragment" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.createPartyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.createPartyActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.loginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.loginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.partyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.partyActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.searchPartyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.searchPartyActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.partyHistoryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.partyHistoryActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.newsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.newsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dk.vinael.fog.profileSettingsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="dk.vinael.profileSettingsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
     </application>
 
 </manifest>

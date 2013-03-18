@@ -24,8 +24,6 @@
         android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="Name of party" >
-
-        <requestFocus />
     </EditText>
 
     <EditText
@@ -38,12 +36,5 @@
         android:ems="10"
         android:hint="Part description"
         android:inputType="textMultiLine" />
-
-    <DatePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_centerVertical="true" />
 
 </RelativeLayout>

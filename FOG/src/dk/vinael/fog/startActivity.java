@@ -1,35 +1,30 @@
 package dk.vinael.fog;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
 
 public class startActivity extends Activity {
 
-	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_framelayout);
-		
-		changeFragment(loginFragment.class);
+		// if logged in > menu else login
+		setContentView(R.layout.fragment_login);
 	}
 	
-	public void changeFragment(Class<? extends Fragment> instanstiate) {
-			
-			try {
-				FragmentManager fm = getFragmentManager();
-				FragmentTransaction transaction;
-				transaction = fm.beginTransaction();
-				Fragment lastFrag = instanstiate.newInstance();
-				transaction.replace(R.id.frameLayout2, lastFrag);
-				transaction.commit();
-			} catch (InstantiationException e) {
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				e.printStackTrace();
-			}
-		}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	public void goToMenu(View v){
+		finish();
+		Intent intent = new Intent(this, menuActivity.class);
+		startActivity(intent);
+	}
 }
 
